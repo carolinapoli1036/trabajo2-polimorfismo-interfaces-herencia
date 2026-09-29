@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Peticion 1 - Nombres de Habitaciones</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        .resultado { background-color: white; border: 1px solid #ccc; padding: 20px; border-radius: 6px; }
+    </style>
+</head>
+<body>
+
+<h1>Peticion 1 - Nombres de las 12 habitaciones (separados por coma)</h1>
+<p>Carolina</p>
+
+<div class="resultado">
+    <p th:text="${nombres}"></p>
+</div>
+
+</body>
+</html>

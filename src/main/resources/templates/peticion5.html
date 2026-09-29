@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Peticion 5 - Elemento con mayor prioridad</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; background-color: white; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #4a4a8a; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+<h1>Peticion 5 - Elemento (Decoracion) con mayor prioridad por habitacion</h1>
+<p>Carolina</p>
+
+<table>
+    <tbody>
+    <tr th:each="linea : ${resultado}">
+        <td th:text="${linea}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
